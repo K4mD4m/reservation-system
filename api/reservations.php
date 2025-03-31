@@ -1,11 +1,11 @@
 <?php
 
-require_once '../classes/Reservation.php'; // Import klasy Reservation
-require_once "../utils.php"; // Import funkcji do JSON
+require_once 'classes/Reservation.php'; // Import klasy Reservation
+require_once "utils.php"; // Import funkcji do JSON
 
-$usersFile = '../data/users.json'; // Plik z użytkownikami
-$servicesFile = '../data/services.json'; // Plik z usługami
-$reservationsFile = '../data/reservations.json'; // Plik z rezerwacjami
+$usersFile = __DIR__ . '/../data/users.json';
+$servicesFile = __DIR__ . '/../data/services.json';
+$reservationsFile = __DIR__ . '/../data/reservations.json';
 
 // Obsługa metod HTTP
 $method = $_SERVER['REQUEST_METHOD'];

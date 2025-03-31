@@ -1,9 +1,9 @@
 <?php
 
-require_once '../classes/User.php'; // Import klasy User
-require_once '../utils.php'; // Import funkcji do JSON
+require_once 'classes/User.php'; // Import klasy User
+require_once 'utils.php'; // Import funkcji do JSON
 
-$usersFile = '../data/users.json'; // Ścieżka do pliku z użytkownikami
+$usersFile = __DIR__ . '/../data/users.json';
 
 // Obsługa metod HTTP
 $method = $_SERVER['REQUEST_METHOD'];

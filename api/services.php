@@ -1,12 +1,12 @@
 <?php 
 
-require_once '../classes/Service.php'; // Import klasy Service
-require_once '../utils.php'; // Importujemy funkcji do JSON
+require_once 'classes/Service.php'; // Import klasy Service
+require_once 'utils.php'; // Importujemy funkcji do JSON
 
-$servicesFile = '../data/services.json'; // Ścieżka do pliku z usługami
+$servicesFile = __DIR__ . '/../data/services.json';
 
 // Obsługa metod HTTP
-$method = $_Server['REQUEST_METHOD'];
+$method = $_SERVER['REQUEST_METHOD'];
 
 if ($method === 'GET') {
     // Pobieramy listę usług
